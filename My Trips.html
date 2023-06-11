@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background: #1abc9c;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div{
+  color: white;
+  text-align:left;
+}
+
+/* Style the footer */
+.footer {
+  background-color:#1abc9c;
+  padding: 20px;
+  text-align:left;
+}
+.footer a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  background-color:#1abc9c;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h2>Your Trips</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#333;">Upcoming</div>
+  <div class="column" style="background-color:#333;">Cancelled</div>
+  <div class="column" style="background-color:#333;">Completed</div>
+</div>
+<div class="footer">
+  <a href="C:\Users\Lenovo\Desktop\Tripplanner Home page.html"class="right">My Account > Your Trips </a>
+</div>
+
+</body>
+</html>
+
+
+
